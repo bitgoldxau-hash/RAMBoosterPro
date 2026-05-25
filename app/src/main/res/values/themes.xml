@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RAMBooster" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6C63FF</item>
+        <item name="colorPrimaryVariant">#4A42CC</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#48CAE4</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#0A0A0A</item>
+        <item name="android:windowBackground">#0F0F1A</item>
+    </style>
+</resources>

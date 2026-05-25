@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.rambooster.pro"
-        minSdk 21           // Android 5.0+ (supports almost all phones)
+        minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.0"

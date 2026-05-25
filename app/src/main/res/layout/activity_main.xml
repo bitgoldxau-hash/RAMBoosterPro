@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0F1A"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RAM Booster Pro"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memory Manager &amp; Cleaner"
+            android:textColor="#7C7C9E"
+            android:textSize="13sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- RAM Stats Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tv_used_ram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:padding="12dp"
+                android:textColor="#6C63FF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View android:layout_width="8dp" android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_free_ram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:padding="12dp"
+                android:textColor="#48CAE4"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View android:layout_width="8dp" android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_ram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:padding="12dp"
+                android:textColor="#F4A261"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RAM USAGE"
+            android:textColor="#5A5A7E"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="6dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_ram"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="63"
+            android:progressTint="#6C63FF"
+            android:progressBackgroundTint="#2A2A3E"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Boost Button -->
+        <Button
+            android:id="@+id/btn_boost"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="⚡ Boost RAM"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6C63FF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Virtual RAM Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIRTUAL RAM"
+            android:textColor="#5A5A7E"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Virtual RAM"
+                    android:textColor="#DDDDDD"
+                    android:textSize="14sp"/>
+
+                <Switch
+                    android:id="@+id/switch_virtual_ram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:thumbTint="#6C63FF"
+                    android:trackTint="#2A2A3E"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_vram_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Virtual RAM: 3 GB"
+                android:textColor="#AAAAAA"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_vram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="8"
+                android:progress="3"
+                android:progressTint="#6C63FF"
+                android:thumbTint="#6C63FF"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_reported_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reported to system: 9 GB"
+                android:textColor="#06D6A0"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Running Apps -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RUNNING APPS"
+            android:textColor="#5A5A7E"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <ListView
+            android:id="@+id/listview_apps"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/card_bg"
+            android:padding="8dp"
+            android:divider="@null"/>
+
+    </LinearLayout>
+</ScrollView>
